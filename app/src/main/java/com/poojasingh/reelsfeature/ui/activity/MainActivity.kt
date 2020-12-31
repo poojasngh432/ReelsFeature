@@ -35,7 +35,7 @@ class MainActivity : BaseActivity(), NavController.OnDestinationChangedListener 
         when (destination.id) {
             R.id.image_view_add_icon -> {
                 changeStatusBarColor(R.color.black)
-                val colorDark = ContextCompat.getColorStateList(
+                val colorWhite = ContextCompat.getColorStateList(
                     this,
                     R.color.white
                 )
@@ -46,9 +46,8 @@ class MainActivity : BaseActivity(), NavController.OnDestinationChangedListener 
                 )
 
                 nav_view.backgroundTintList = colorBlack
-                nav_view.itemTextColor = colorDark
-                nav_view.itemIconTintList = colorDark
-                //image_view_add_icon.setImageResource(R.drawable.ic_add_icon_light)
+                nav_view.itemTextColor = colorWhite
+                nav_view.itemIconTintList = colorWhite
             }
             else -> {
                 changeStatusBarColor(R.color.black)
@@ -65,7 +64,6 @@ class MainActivity : BaseActivity(), NavController.OnDestinationChangedListener 
                 nav_view.backgroundTintList = colorDark
                 nav_view.itemTextColor = colorWhite
                 nav_view.itemIconTintList = colorWhite
-                //image_view_add_icon.setImageResource(R.drawable.ic_add_icon_dark)
             }
         }
     }
